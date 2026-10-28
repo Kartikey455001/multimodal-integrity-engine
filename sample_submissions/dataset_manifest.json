@@ -1,0 +1,163 @@
+{
+  "dataset_version": "1.0",
+  "synthetic_only": true,
+  "notes": [
+    "All organizations and cases are fictional.",
+    "12_pitch.mp4 contains generated spoken audio of the known Kestrel Ridge passage.",
+    "Five or more written submissions share the assignment prompt and contain independent analysis (07, 08, 10, 11, 15, and the prompt prefix on several others)."
+  ],
+  "documents": [
+    {
+      "document_id": "01_exact_original.pdf",
+      "filename": "01_exact_original.pdf",
+      "format": "pdf",
+      "category": "exact_copy",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nFictional Lumen Harbor Cooperative reduced food waste by routing surplus produce through neighborhood cold lockers. Each locker recorded temperature every ten minutes, and a volunteer coordinator matched nearby requests before the evening pickup window. The pilot measured kilograms rescued, electricity use, and missed collections for twelve weeks."
+    },
+    {
+      "document_id": "02_exact_copy.docx",
+      "filename": "02_exact_copy.docx",
+      "format": "docx",
+      "category": "exact_copy",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nFictional Lumen Harbor Cooperative reduced food waste by routing surplus produce through neighborhood cold lockers. Each locker recorded temperature every ten minutes, and a volunteer coordinator matched nearby requests before the evening pickup window. The pilot measured kilograms rescued, electricity use, and missed collections for twelve weeks.",
+      "known_copied_source": "01_exact_original.pdf"
+    },
+    {
+      "document_id": "03_paraphrase_a.docx",
+      "filename": "03_paraphrase_a.docx",
+      "format": "docx",
+      "category": "paraphrase",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nThe made-up Brindle Works repair network improved appliance reuse by giving libraries small diagnostic kits. Residents booked a short inspection, technicians identified replaceable components, and the library lent the repaired item while its owner waited for a part. The team compared repair completion, waiting time, and repeat faults across several branches."
+    },
+    {
+      "document_id": "04_paraphrase_b.docx",
+      "filename": "04_paraphrase_b.docx",
+      "format": "docx",
+      "category": "paraphrase",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nAt fictional Brindle Works, tool kits in local libraries helped technicians assess broken household devices. People reserved an examination, staff found components that could be swapped, and a loaner stayed available until the replacement arrived. The project tracked successful fixes, delays, and recurring problems at multiple sites.",
+      "known_paraphrased_relationship": "03_paraphrase_a.docx"
+    },
+    {
+      "document_id": "05_crossmodal_written.pdf",
+      "filename": "05_crossmodal_written.pdf",
+      "format": "pdf",
+      "category": "cross_modal",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nThe fictional Kestrel Ridge clean energy pilot placed rooftop solar collectors on public transit shelters. Each shelter stored excess power in a shared neighborhood battery, and a dispatch algorithm rerouted reserve electricity during peak evening hours. The pilot measured kilowatt-hours generated, battery degradation, and outage frequency over six months.",
+      "known_cross_modal_relationship": "12_pitch.mp4"
+    },
+    {
+      "document_id": "06_reference_overlap.pdf",
+      "filename": "06_reference_overlap.pdf",
+      "format": "pdf",
+      "category": "external_reference",
+      "text": "A resilient fictional city service keeps a written inventory of critical supplies, checks the list at regular intervals, and assigns a named person to replenish each item before the reserve falls below its minimum level. Clear ownership makes routine preparation easier to audit."
+    },
+    {
+      "document_id": "07_original_velora.pdf",
+      "filename": "07_original_velora.pdf",
+      "format": "pdf",
+      "category": "boilerplate",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nOn the imaginary moon Velora, floating gardens capture mineral mist at dawn. Researchers rotate salt-tolerant seedlings between shaded platforms and measure root growth after each mist cycle.",
+      "originality": "independent_analysis"
+    },
+    {
+      "document_id": "08_original_emberline.pdf",
+      "filename": "08_original_emberline.pdf",
+      "format": "pdf",
+      "category": "boilerplate",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nFictional Emberline Transit uses painted floor markers to help riders find quiet waiting zones. A small community team revises the colors after monthly accessibility walks.",
+      "originality": "independent_analysis"
+    },
+    {
+      "document_id": "09_ai_style.docx",
+      "filename": "09_ai_style.docx",
+      "format": "docx",
+      "category": "ai_style",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\n\nThe fictional Ardent Vale observatory carefully records each repeated signal. The consistent process produces orderly observations. The repeated method supports clear reports. The stable pattern enables predictable summaries. Each measured event follows the same reliable sequence. The documentation remains regular and structured."
+    },
+    {
+      "document_id": "10_benign_template_a.docx",
+      "filename": "10_benign_template_a.docx",
+      "format": "docx",
+      "category": "boilerplate",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\nAnalysis: A small tool library could lower repair costs in the invented town of Mica Bay."
+    },
+    {
+      "document_id": "11_benign_template_b.docx",
+      "filename": "11_benign_template_b.docx",
+      "format": "docx",
+      "category": "boilerplate",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\nAnalysis: Fictional Sunward farms should share irrigation logs during dry months."
+    },
+    {
+      "document_id": "12_pitch.mp4",
+      "filename": "12_pitch.mp4",
+      "format": "mp4",
+      "category": "cross_modal",
+      "text": "",
+      "known_spoken_words": "The fictional Kestrel Ridge clean energy pilot placed rooftop solar collectors on public transit shelters. Each shelter stored excess power in a shared neighborhood battery, and a dispatch algorithm rerouted reserve electricity during peak evening hours. The pilot measured kilowatt-hours generated, battery degradation, and outage frequency over six months.",
+      "transcription_status": "spoken_audio_muxed_with_pyav"
+    },
+    {
+      "document_id": "13_silent_pitch.mp4",
+      "filename": "13_silent_pitch.mp4",
+      "format": "mp4",
+      "category": "degraded",
+      "text": "",
+      "transcription_status": "silent video"
+    },
+    {
+      "document_id": "14_corrupt_zero_byte.pdf",
+      "filename": "14_corrupt_zero_byte.pdf",
+      "format": "empty",
+      "category": "degraded",
+      "text": "",
+      "expected_detection": "zero-byte failure"
+    },
+    {
+      "document_id": "15_benign_template_c.docx",
+      "filename": "15_benign_template_c.docx",
+      "format": "docx",
+      "category": "boilerplate",
+      "text": "Explain your selected case study, describe the central problem, and recommend a practical solution.\nAnalysis: The invented Cedar Quay ferry should publish hourly occupancy counts so late riders can choose a quieter sailing."
+    }
+  ],
+  "positive_pairs": [
+    [
+      "01_exact_original.pdf",
+      "02_exact_copy.docx"
+    ],
+    [
+      "03_paraphrase_a.docx",
+      "04_paraphrase_b.docx"
+    ],
+    [
+      "05_crossmodal_written.pdf",
+      "12_pitch.mp4"
+    ]
+  ],
+  "cross_modal_pairs": [
+    [
+      "05_crossmodal_written.pdf",
+      "12_pitch.mp4"
+    ]
+  ],
+  "negative_benign_pairs": [
+    [
+      "10_benign_template_a.docx",
+      "11_benign_template_b.docx"
+    ],
+    [
+      "10_benign_template_a.docx",
+      "15_benign_template_c.docx"
+    ],
+    [
+      "11_benign_template_b.docx",
+      "15_benign_template_c.docx"
+    ],
+    [
+      "07_original_velora.pdf",
+      "08_original_emberline.pdf"
+    ]
+  ]
+}

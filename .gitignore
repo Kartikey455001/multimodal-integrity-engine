@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.py[cod]
+reports/*.json
+reports/*.md
+reports/*.csv
+models/
+.cache/
+.test-tmp/
+*.wav
+*.tmp
+.python-version

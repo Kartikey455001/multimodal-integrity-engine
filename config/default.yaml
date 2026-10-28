@@ -1,0 +1,40 @@
+# Single validated configuration path. CLI flags override these values.
+chunking:
+  # Word-count approximation of 200-400 tokens; not a true tokenizer.
+  target_words: 260
+  overlap_words: 45
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 32
+  device: cpu
+  cache_dir: .cache/embeddings
+similarity:
+  # 0.80 is the assignment example, not a calibrated universal threshold.
+  peer_semantic_threshold: 0.80
+  external_semantic_threshold: 0.82
+  exact_threshold: 0.92
+  top_k: 3
+boilerplate:
+  min_document_frequency: 5
+  min_sentence_words: 5
+  phrases:
+    - "Explain your selected case study, describe the central problem, and recommend a practical solution."
+ai_indicator:
+  min_words: 100
+risk:
+  medium_peer: 15
+  high_peer: 35
+  medium_external: 15
+  high_external: 35
+video:
+  whisper_model: tiny
+  device: cpu
+  compute_type: int8
+  language: en
+references: reference_corpus/references.json
+reports:
+  max_matches: 12
+  schema_version: "1.0"
+logging:
+  level: INFO
+offline: false
